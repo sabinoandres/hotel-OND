@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Alta</title>
+    
+        <style>
+            label{border: 2px black solid; background-color: brown;}
+            h1{color: blue;}
+            label{color: blue;}
+            #identificacion{
+                text-align: center;
+            }
+            table{
+                border: 3px black solid;
+            }
+            #reset{margin-left: 36%;}
+            #enviar{margin-left: 40%}
+            #modificar{text-align: center;}
+            td{border: 1px black solid;
+            height: 30px;}
+            fieldset{border: 0px;}
+
+      </style>   
+    </head>
+
+
+    <body background="imagenes de pagina/logo oficial.png">
+        <nav class="nav-bar">
+            <button class="inicio"> <a href="index.html">Inicio</a></button> 
+           <button>  <a href="#contacto">Contacto</a></button>
+          
+          </nav>
+    <h1>Formulario de alta de usuario</h1>
+    <form action="">
+        <table>
+            <tbody><tr>
+                <td colspan="2" id="identificacion">
+                    <label for="username">Identificador de nuevo usuario</label>
+                    <input type="text" name="username" id="username" value="usu_012345" readonly="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre </label><input type="text" name="name" id="nombre">
+                </td>
+                <td>
+                    <label for="apellido">Apellido</label> 
+                    <input type="text" name="surname" id="apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="contraseña">Contraseña</label> 
+                    <input type="password" name="password" id="contraseña">
+                </td>
+                <td>
+                    <label for="contraseña1">Contraseña</label>
+                    <input type="password" name="password1" id="contrseña1">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="correo">Email</label>
+                    <input type="email" name="email" id="correo" size="41">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sexo">sexo</label>
+                </td>
+                <td>
+                    <input type="radio" name="sexo" id="v">
+                        <label for="">Varon</label>
+
+                        <input type="radio" name="sexo" checked="" id="m">
+                        <label for="m">Mujer</label>
+                    
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="enviar"></label>
+                    <input type="submit">
+                </td>
+            </tr>
+
+            
+</body>
+</html>
