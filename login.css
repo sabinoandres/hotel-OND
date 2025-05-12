@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-image:url(../imagenes/imagen\ iniciar\ sesion.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(18px);
+    background-color: rgba(0, 128, 255, 0.5);
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;  
+}
+
+.caja__trasera div h3{
+     font-weight: 400;
+     font-size: 26px;
+}
+.caja__trasera button{
+    padding: 10px 40px;
+    border:2px solid #ffff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transform: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: rgb(7, 242, 246);
+}
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
+
+/*formularios*/
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(4, 106, 248);
+
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2fd;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario__login{
+    opacity: l;
+    display: block;
+}
+
+.formulario__register{
+    display: none;
+}
+
+/*trabajando en el responsive designs*/
+@media screen and (max-width:850px){
+
+    main{
+        margin-top: 50px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+    /*formulario*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    
+    .contenedor__login-register form{
+        position: relative;
+    }
+    
+}
+
+
+
+
+/*esto es solo para el header*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Source Code Pro", monospace;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background:#fff;
+    box-shadow:0 4px 25px black ;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1 b{
+    color: chartreuse;
+}
+
+.menu{
+    height: 80px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #4ddc06;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+menu nav ul li a{
+    color:#777777;
+    font-size: 18px;
+    transition: color 300ms;
+    
+}
+
+.menu nav ul li a:hover{
+    color: blue;
+}
+
+.menu .text-menu-selected{
+    color:blue
+}
+
+/*portada*/
+
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position:relative;
+    top: 80px;
+    background-image:url(imagenes/El\ amor\ cobra\ vida\ con\ los\ colores\ de\ la\ bandera\ del\ país\ Guinea\ Ecuatorial.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    /*quitare la capa azul despues*/
+.container-cover::before{
+    content: '';
+    width:100%;
+    height: 100%;
+    background-color:rgba(38, 172, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin:auto ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1{
+   font-size: 60px; 
+   font-weight: 500;
+   color: #fff;
+   margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}

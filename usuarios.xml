@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="usuarios.xsl"?>
+<usuarios>
+    <usuario>
+        <nombre_completo>Juan Pérez</nombre_completo>
+        <correo>juan.perez@example.com</correo>
+        <nombre_usuario>juanp</nombre_usuario>
+        <contrasena>1234</contrasena>
+    </usuario>
+    <usuario>
+        <nombre_completo>Ana Gómez</nombre_completo>
+        <correo>ana.gomez@example.com</correo>
+        <nombre_usuario>anag</nombre_usuario>
+        <contrasena>abcd</contrasena>
+    </usuario>
+</usuarios>
